@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet">
+    <title>module-03</title>
 </head>
 <body>
     <header>
-        
+        <div class="container">
+            <!-- main menu of site -->
+            <ul class="site-menu">
+                <li><a href="#ls">lifestyle</a></li>
+                <li><a href="#pd">photodiary</a></li>
+                <li><a href="#">music</a></li>
+                <li><a href="#">travel</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-
+        <h1 class="visually-hidden">Main page of site</h1>
+        <section class="main-section container">
+            <h2 class="visually-hidden">Our articles</h2>
+            <!-- articles of site -->
+            <ul class="articles">
+                <li id="ls">
+                    <img src=".img/image1.jpg" alt="image1" width="420px" height="280px">
+                    <p class="articles-category">lifestyle</p>
+                    <h3>More than just a music festival</h3>
+                    <p class="articles-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </li>
+                <li>
+                    <img src=".img/image2.jpg" alt="image2" width="420px" height="280px">
+                    <p class="articles-category">lifestyle</p>
+                    <h3>Life tastes better with coffee</h3>
+                    <p class="articles-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </li>
+                <li id="pd">
+                    <img src=".img/image3.jpg" alt="image3" width="420px" height="280px">
+                    <p class="articles-category">photodiary</p>
+                    <h3>American dream</h3>
+                    <p class="articles-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </li>
+                <li>
+                    <img src=".img/image4.jpg" alt="image4" width="420px" height="280px">
+                    <p class="articles-category">photodiary</p>
+                    <h3>A day exploring the Alps</h3>
+                    <p class="articles-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </li>
+                <li>
+                    <img src=".img/image5.jpg" alt="image5" width="420px" height="280px">
+                    <p class="articles-category">lifestyle</p>
+                    <h3>Top 10 song for running</h3>
+                    <p class="articles-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </li>
+                <li>
+                    <img src=".img/image6.jpg" alt="image6" width="420px" height="280px">
+                    <p class="articles-category">lifestyle</p>
+                    <h3>Cold winter days</h3>
+                    <p class="articles-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </li>
+            </ul>
+            <!-- button load more articles -->
+            <button class="load-more">Load more</button>
+        </section>
     </main>
 </body>
 </html>
