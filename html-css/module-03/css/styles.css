@@ -25,19 +25,21 @@ body {
 .site-menu {
     margin: 0 auto;
     padding: 72px 0 98px 0;
-    width: 572px;
     text-align: center;
     font-size: 0;
 }
 
 .site-menu li {
     display: inline-block;
-    width: 143px;
     margin: 0;
     padding: 0;
     font-size: 14px;
     line-height: 24px;
 }
+
+.site-menu li:not(:last-child){
+    margin-right: 60px;
+    }
 
 .site-menu a {
     text-decoration: none;
@@ -93,12 +95,17 @@ body {
 .articles-paragraf {
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
+}
+
+.main-section {
+    margin-bottom: 70px;
 }
 
 /* button load more articles */
 .load-more {
     display: block;
-    margin: 0 auto 70px auto;
+    margin: 0 auto;
     padding: 18px 34px;
     border: 0;
     font-size: 20px;
