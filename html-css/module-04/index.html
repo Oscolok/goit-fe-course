@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>module-04</title>
     </head>
     <body>
         <header>
-            <div class="container clearfix">
+            <div class="header container clearfix">
                 <a href="#" class="site-logo">mart</a>
                 <ul class="main-menu">
                     <li><a href="#">home</a></li>
@@ -24,84 +24,108 @@
             </div>
         </header>
         <main>
-            <div class="container">
-                <h1 class="visually-hidden">online store</h1>
-                <section class="section-featured">
-                    <h2>featured products</h2>
+            <h1 class="visually-hidden">online store</h1>
+            <section class="section-featured">
+                <div class="container">
+                    <h2 class="section-title">featured products</h2>
                     <ul class="featured-list clearfix">
                         <li class="featured-item">
-                            <img src="img/product1.png" alt="blue tshirt" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">blue tshirt</a></h3>
-                            <p class="featured-price">$26</p>
+                            <img src="img/product1.png" alt="blue tshirt" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3 class="featured-title"><a href="">blue tshirt</a></h3>
+                                <p class="featured-price">$26</p>
+                            </div>
                         </li>
 
                         <li class="featured-item">
-                            <img src="img/product2.png" alt="woman shirt" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">woman shirt</a></h3>
-                            <p class="featured-price">$31</p>
+                            <img src="img/product2.png" alt="woman shirt" width="255" height="282">\
+                            <div class="bottom-panel">
+                                <h3><a href="">woman shirt</a></h3>
+                                <p>$31</p>
+                            </div>
                         </li>
 
                         <li class="featured-item">
-                            <img src="img/product3.png" alt="yellow tshirt" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">yellow tshirt</a></h3>
-                            <p class="featured-price">$21</p>
+                            <img src="img/product3.png" alt="yellow tshirt" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3><a href="">yellow tshirt</a></h3>
+                                <p>$21</p>
+                            </div>
                         </li>
                         
                         <li class="featured-item">
-                            <img src="img/product4.png" alt="cool lingerie" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">cool lingerie</a></h3>
-                            <p class="featured-price">$56</p>
+                            <img src="img/product4.png" alt="cool lingerie" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3><a href="">cool lingerie</a></h3>
+                                <p>$56</p>
+                            </div>
                         </li>
                         
                         <li class="featured-item">
-                            <img src="img/product5.png" alt="blue tshirt" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">blue tshirt</a></h3>
-                            <p class="featured-price">$26</p>
+                            <img src="img/product5.png" alt="blue tshirt" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3><a href="">blue tshirt</a></h3>
+                                <p>$26</p>
+                            </div>
                         </li>
                         
                         <li class="featured-item">
-                            <img src="img/product6.png" alt="woman shirt" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">woman shirt</a></h3>
-                            <p class="featured-price">$31</p>
+                            <img src="img/product6.png" alt="woman shirt" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3><a href="">woman shirt</a></h3>
+                                <p>$31</p>
+                            </div>
                         </li>
                         
                         <li class="featured-item">
-                            <img src="img/product7.png" alt="yellow tshirt" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">yellow tshirt</a></h3>
-                            <p class="featured-price">$21</p>                            
+                            <img src="img/product7.png" alt="yellow tshirt" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3><a href="">yellow tshirt</a></h3>
+                                <p>$21</p>
+                            </div>                           
                         </li>
                         
                         <li class="featured-item">
-                            <img src="img/product8.png" alt="cool lingerie" width="255px" height="282px">
-                            <h3 class="featured-title"><a href="">cool lingerie</a></h3>
-                            <p class="featured-price">$56</p>
+                            <img src="img/product8.png" alt="cool lingerie" width="255" height="282">
+                            <div class="bottom-panel">
+                                <h3><a href="">cool lingerie</a></h3>
+                                <p>$56</p>
+                            </div>
                         </li>
                     </ul>
-                </section>
-                <section class="section-news">
-                    <h2>latest news</h2>
+                </div>
+            </section>
+            <section class="section-news">
+                <div class="container">
+                    <h2 class="section-title">latest news</h2>
                     <ul class="news-list clearfix">
-                        <li><img src="img/ipad.jpg" alt="Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean" width="350px" height="262">
+                        <li><img src="img/ipad.jpg" alt="Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean" width="350" height="262">
                             <h3>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
                             <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
-                            <button>Read More</button>
+                            <div>
+                                <a href="#">Read More</a>
+                            </div>
                         </li>
 
-                        <li><img src="img/womans.jpg" alt="Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean" width="350px" height="262">
+                        <li><img src="img/womans.jpg" alt="Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean" width="350" height="262">
                             <h3>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
                             <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
-                            <button>Read More</button>
+                            <div>
+                                <a href="#">Read More</a>
+                            </div>
                         </li>
 
                         <li>
-                            <img src="img/bus.jpg" alt="Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean" width="350px" height="262">
+                            <img src="img/bus.jpg" alt="Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean" width="350" height="262">
                             <h3>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean</h3>
                             <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
-                            <button>Read More</button>
+                            <div>
+                                <a href="#">Read More</a>
+                            </div>
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
