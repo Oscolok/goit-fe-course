@@ -16,9 +16,11 @@ html {
 
 /* header */
 .header {
-    padding: 31px 0 31px 0;
+    margin-bottom: 72px;
+    padding-top: 30px;
 }
 
+/* logo */
 .site-logo {
     float: left;
     margin: 0;
@@ -37,10 +39,11 @@ html {
     font-weight: 900;
 }
 
+/* main menu */
 .main-menu {
     float: right;
-    margin: 0;
-    padding: 9.5px 0 9.5px 0;
+    margin: 9px 0 0 0;
+    padding: 0;
 }
 
 .main-menu li {
@@ -70,13 +73,13 @@ html {
 
 /* main */
 .section {
-    padding: 54px 0 80px 0;
+    padding: 13px 0 80px 0;
 }
 
 /* h2 title */
 .section-title {
-    margin: 0;
-    padding: 0 0 93px 0;
+    margin: 0 0 80px 0;
+    padding: 0;
     text-align: center;
     color: #515151;
     font-size: 48px;
@@ -98,7 +101,7 @@ html {
 /* section-featured */
 .featured-list {
     margin: 0;
-    padding: 0 0 93px 0;
+    padding: 0;
 }
 
 .featured-item {
@@ -231,7 +234,8 @@ html {
     text-decoration: none;
 }
 
-.news-list a:hover {
+.news-list a:hover,
+.news-list a:focus {
     background-color: #323232
 }
 
