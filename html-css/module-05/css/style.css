@@ -138,12 +138,12 @@ a {
 
 .button-left {
   float: left;
-  background-image: url(/img/slider/left.png);
+  background-image: url(img/slider/left.png);
 }
 
 .button-right {
 float: right;
-background-image: url(/img/slider/right.png);
+background-image: url(img/slider/right.png);
 }
 
 .slider-title-wrapper {
@@ -298,19 +298,19 @@ background-image: url(/img/slider/right.png);
 }
 
 .icon-heart {
-  background-image: url(/img/colection/icons/heart.png);
+  background-image: url(img/colection/icons/heart.png);
 }
   
 .icon-arrow {
-   background-image: url(/img/colection/icons/arrows.png); 
+   background-image: url(img/colection/icons/arrows.png); 
 }
   
 .icon-clock {
-   background-image: url(/img/colection/icons/clock.png); 
+   background-image: url(img/colection/icons/clock.png); 
 }
   
 .icon-cart {
-  background-image: url(/img/colection/icons/cart.png);
+  background-image: url(img/colection/icons/cart.png);
 }
 
 /* COLLECTION PANEL */
