@@ -192,7 +192,7 @@ background-image: url(../img/slider/right.png);
 .section-title::after {
   content: "";
   display: block;
-  margin: 0 auto;
+  margin: 26px auto 0;
   background-color: rgb(26, 188, 156);
   width: 164px;
   height: 7px;
@@ -202,6 +202,7 @@ background-image: url(../img/slider/right.png);
 /* COLLECTION ITEM */
 .collection-item {
   float: left;
+  width: 255px;
 }
 
 .collection-item:hover .collection-panel {
@@ -314,8 +315,6 @@ background-image: url(../img/slider/right.png);
 
 /* COLLECTION PANEL */
 .collection-panel {
-  width: 255px;
-  height: 40px;
   background-color:rgb(50, 50, 50);
 }
 
