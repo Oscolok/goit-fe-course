@@ -361,6 +361,7 @@ height: 178px;
 
 .developer-site-link {
   color: rgb(243, 129, 129);
+  transition: color 0.2s linear;
 }
 
 .developer-site-link:hover {
@@ -399,6 +400,7 @@ height: 178px;
   font-family: var(--ff1);
   text-transform: uppercase;
   background-color: rgb(149, 225, 211);
+  transition: background-color 0.2s linear;
   cursor: pointer;
 }
 
