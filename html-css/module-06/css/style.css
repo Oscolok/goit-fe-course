@@ -229,15 +229,12 @@ height: 178px;
 
 /* TEAM PHOTOS OVERLAY */
 .team-photo-wrapper {
+  position: relative;
+  margin-bottom: 30px;
   width: 380px;
   height: 470px;
   background-color: rgba(149, 225, 211, 0);
   transition: background-color .2s linear;
-}
-
-.team-photo-wrapper {
-  position: relative;
-  margin-bottom: 30px;
 }
 
 .team-photo-wrapper:hover {
@@ -300,6 +297,7 @@ height: 178px;
   background-color: rgb(149, 225, 211);
 }
 
+/* BUTTON ICON */
 .facebook {
   background-image: url(../img/team/icons/facebook.png);
 }
