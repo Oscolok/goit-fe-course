@@ -256,7 +256,6 @@ height: 178px;
   content: "";
   display: block;
   opacity: 0;
-  visibility: hidden;
   position: absolute;
   width: 380px;
   height: 470px;
@@ -266,7 +265,6 @@ height: 178px;
 
 .team-photo-wrapper:hover .team-photo-overlay::before {
   opacity: 1;
-  visibility: visible;
 }
 
 /* TEAM OVERLAY BUTTONS */
