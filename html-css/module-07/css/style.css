@@ -1,0 +1,299 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Bitter Italic'), local('Bitter-Italic'),
+       url('../fonts/bitter-v15-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/bitter-v15-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+  --robotoslab: 'Roboto Slab', serif;
+  --bitter: 'Bitter', serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.nav-site {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0 10px 0;
+}
+
+.site-logo {
+  margin-left: 7px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-list {
+  
+}
+
+.main-menu-list:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-menu-link {
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+}
+
+.main-menu-link:hover {
+  color: rgb(254, 209, 54);
+}
+
+/* SECTION */
+.section-style {
+  padding: 100px 0 120px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.96px;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+}
+
+.section-desc {
+  text-align: center;
+  margin-bottom: 80px;
+  color: rgb(119, 119, 119);
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: var(--bitter);
+}
+
+/* SECTION SERVICES */
+.section-title-services {
+  color: rgb(34, 34, 34);
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-item {
+  width: 276px;
+  text-align: center;
+}
+
+.services-item::before {
+  content: "";
+  display: block;
+  margin: 0 auto 26px;
+  width: 72px;
+  height: 72px;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-item:nth-child(1)::before {
+  background-image: url(../img/icons/basket.png);
+}
+
+.services-item:nth-child(2)::before {
+  background-image: url(../img/icons/laptop.png);
+}
+
+.services-item:nth-child(3)::before {
+  background-image: url(../img/icons/locked.png);
+}
+
+.services-item-title {
+  margin-bottom: 20px;
+  color: rgb(34, 34, 34);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+
+.services-item-desc {
+  color: rgb(119, 119, 119);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  font-family: var(--robotoslab);
+}
+ 
+/* SECTION CONTACT */
+.contact-bgc {
+  background-color: rgb(34, 34, 34);
+  background-image: url(../img/bg-map.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.section-title-contact {
+  color: rgb(255, 255, 255);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact-form-list {
+  width: calc(50% - 15px);
+}
+
+.contact-form-item {
+
+}
+
+.contact-form-item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding-left: 20px;
+}
+
+.contact-form-textarea {
+  width: calc(50% - 15px);
+  height: 210px;
+  resize: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.contact-form-submit-btn {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 66px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  cursor: pointer;
+}
+
+.contact-form-submit-btn:hover {
+
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  outline: none;
+}
+
+.contact-form-input:focus:valid,
+.contact-form-textarea:focus:valid {
+  border-color: rgb(0, 128, 0);
+}
+
+.contact-form-input:focus:invalid,
+.contact-form-textarea:focus:invalid {
+  border-color: rgb(255, 0, 0);
+}
+
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+  color: rgb(187, 187, 187);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+}
+
+
+/* VISUALLY HIDDEN TEHNOLOGY */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
