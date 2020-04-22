@@ -24,8 +24,8 @@
   </header>
 
   <main>
-    <section>
-      <div class="section-services section-style container">
+    <section class="section-services">
+      <div class="container">
         <h2 class="section-title section-title-services">Services</h2>
         <p class="section-desc">Proin iaculis purus consequat sem cure. </p>
         <ul class="services-list">
@@ -51,19 +51,19 @@
       </div>
     </section>
 
-    <section class="contact-bgc">
-      <div class="section-contact section-style container">
+    <section class="section-contact">
+      <div class="container">
         <h2 class="section-title section-title-contact">Contact us</h2>
         <p class="section-desc">Proin iaculis purus consequat sem cure.</p>
 
         <form action="#">
           <div class="contact-form">
-            <ul class="contact-form-list">
-              <li class="contact-form-item"><input type="text" name="name" class="contact-form-input" placeholder="your name *" required minlength="2"></li>
-              <li class="contact-form-item"><input type="email" name="mail" class="contact-form-input" placeholder="your e-mail *" required minlength="5"></li>
-              <li class="contact-form-item"><input type="text" name="subject" class="contact-form-input" placeholder="subject"></li>
-            </ul>
-            <textarea name="message" class="contact-form-textarea" placeholder="your message *" required minlength="2" maxlength="300"></textarea>
+            <div class="contact-form-wrap">
+              <input type="text" name="name" id="user-name" class="contact-form-input" placeholder="your name *" required minlength="2">
+              <input type="email" name="mail" id="user-mail" class="contact-form-input" placeholder="your e-mail *" required minlength="5">
+              <input type="text" name="subject" id="user-subject" class="contact-form-input" placeholder="subject">
+            </div>
+            <textarea name="message" id="user-message" class="contact-form-textarea" placeholder="your message *" required minlength="10" maxlength="300"></textarea>
           </div>
           <button type="submit" value="contact-submit" class="contact-form-submit-btn">send message</button>
         </form>
