@@ -98,6 +98,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .nav-btn:hover,
@@ -165,6 +166,7 @@ a {
 .search-link:hover,
 .search-link:focus {
   outline: none;
+  border: 2px solid rgb(255, 78, 80);
   background-color: rgb(255, 255, 255);
   color: rgb(255, 78, 80);
 }
@@ -342,8 +344,13 @@ a {
   .section-wrapper {
     padding: 70px 0 40px;
   }
+
+  .section-partner-title {
+    margin-bottom: 32px;
+  }
   
   .partner-list {
+    margin-bottom: 36px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -363,7 +370,7 @@ a {
   }
 
   .partner-item:not(:nth-last-child(2n + 1)) {
-    margin-bottom: 36px;
+    margin-bottom: 56px;
   }
   
   /* SECTION PARTNER BUTTON */
