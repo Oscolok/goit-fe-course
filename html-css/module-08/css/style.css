@@ -67,11 +67,170 @@ a {
   text-decoration: none;
 }
 
+.container {
+  margin: 0 auto;
+  width: 300px;
+}
+
 /* HEADER */
+.header {
+  min-width: 320px;
+  background-image: url(../img/bg/head-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navigation {
+  padding: 20px 0 15px;
+  text-align: center;
+}
+
+.nav-btn-wrapper {
+  margin-bottom: 124px;
+}
+
+.nav-btn {
+  width: 90px;
+  height: 36px;
+  border: transparent;
+  background-color: transparent;
+  font-family: var(--montserat);
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  outline: none;
+  border-radius: 18px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.site-logo {
+  text-align: center;
+  margin-bottom: 18px;
+  font-family: var(--montserat);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+/* HEADER SECTION */
+.find-partner {
+  padding: 14px 0 138px;
+}
+
+.h2 {
+  margin: 12px;
+  text-align: center;
+  font-family: var(--montserat);
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.h2-subtitle {
+  margin-bottom: 14px;
+  text-align: center;
+  font-family: var(--roboto);
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.h2-subtitle-span {
+  display: block;
+}
+
+.search-link {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  font-family: var(--montserat);
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.search-link:hover,
+.search-link:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 78, 80);
+}
 
 /* MAIN */
+.section-wrapper {
+  padding: 70px 0 56px;
+}
 
-/* FOOTER */
+.section-partner-title {
+  margin-bottom: 14px;
+  text-align: center;
+  font-family: var(--montserat);
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+
+.partner-item {
+  margin: 0 auto 28px;
+  width: 220px;
+}
+
+.partner-av {
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.partner-name {
+  margin-bottom: 14px;
+  text-align: center;
+  font-family: var(--montserat);
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+
+.partner-desc {
+  text-align: center;
+  font-family: var(--roboto);
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
+
+.other-partner-link {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 78, 80);
+  background-color: transparent;
+  font-family: var(--montserat);
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 78, 80)
+}
+
+.other-partner-link:hover,
+.other-partner-link:focus {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 78, 80);
+}
 
 /* VISUALLY HIDDEN TEHNOLOGY */
 .visually-hidden:not(:focus):not(:active),
