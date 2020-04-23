@@ -69,7 +69,7 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 300px;
+  width: 320px;
 }
 
 /* HEADER */
@@ -123,7 +123,7 @@ a {
   padding: 14px 0 138px;
 }
 
-.h2 {
+.main-title {
   margin: 12px;
   text-align: center;
   font-family: var(--montserat);
@@ -133,7 +133,7 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.h2-subtitle {
+.main-title-desc {
   margin-bottom: 14px;
   text-align: center;
   font-family: var(--roboto);
@@ -142,7 +142,7 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.h2-subtitle-span {
+.main-title-desc-span {
   display: block;
 }
 
@@ -169,6 +169,10 @@ a {
 }
 
 /* MAIN */
+.section-partner {
+  min-width: 320px;
+}
+
 .section-wrapper {
   padding: 70px 0 56px;
 }
@@ -187,8 +191,49 @@ a {
   width: 220px;
 }
 
-.partner-av {
+.partner-av-wrapper {
   margin: 0 auto 20px;
+  width: 122px;
+  height: 122px;
+  position: relative;
+}
+
+.partner-av-wrapper::before {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 78, 80);
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.partner-item:nth-child(1) .partner-av-wrapper::before {
+  background-image: url(../img/av/icons/tv.png);
+  background-color: rgb(255, 78, 80);
+}
+
+.partner-item:nth-child(2) .partner-av-wrapper::before {
+  background-image: url(../img/av/icons/flask.png);
+  background-color: rgb(255, 165, 7);
+}
+
+.partner-item:nth-child(3) .partner-av-wrapper::before {
+  background-image: url(../img/av/icons/coffe.png);
+  background-color: rgb(28, 215, 173);
+}
+
+.partner-item:nth-child(4) .partner-av-wrapper::before {
+  background-image: url(../img/av/icons/airplane.png);
+  background-color: rgb(78, 115, 219);
+}
+
+.partner-av {
   border-radius: 50%;
 }
 
