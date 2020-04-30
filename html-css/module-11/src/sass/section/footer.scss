@@ -1,0 +1,63 @@
+.footer {
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(229, 229, 229);
+
+  &__copyright {
+    color: $third-text-color;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: $first-font;
+
+    &-link {
+      color: $sacond-color;
+      transition: color 0.2s linear;
+    }
+
+    &-link:hover {
+      color: rgb(149, 225, 211);
+    }
+  }
+
+  &__subscribe-form {
+    display: flex;
+
+    &-input {
+      padding-left: 12px;
+      width: 230px;
+      border-width: 1px 0 1px 1px;
+      border-style: solid;
+      border-color: rgb(231, 231, 231);
+
+      &::placeholder {
+        color: rgb(204, 204, 204);
+        font-size: 15px;
+        font-style: italic;
+        line-height: 40px;
+        font-weight: 300;
+        font-family: $second-font;
+      }
+    }
+
+    &-btn {
+      border: none;
+      width: 150px;
+      color: $second-text-color;
+      font-size: 14px;
+      line-height: 40px;
+      font-weight: 700;
+      font-family: $first-font;
+      text-transform: uppercase;
+      background-color: rgb(149, 225, 211);
+      transition: background-color 0.2s linear;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $sacond-color;
+      }
+    }
+  }
+}

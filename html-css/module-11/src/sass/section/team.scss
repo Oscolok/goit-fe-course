@@ -1,0 +1,137 @@
+.section-team {
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    margin: 0 auto 90px;
+    text-align: center;
+    max-width: 946px;
+    color: $main-text-color;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: $second-font;
+  }
+
+  &__team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__team-item {
+    width: 380px;
+  }
+
+  /* TEAM PHOTOS OVERLAY */
+  &__photo-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: rgba(149, 225, 211, 0);
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: rgba(149, 225, 211, 1);
+    }
+
+    &:hover .section-team__photo-overlay {
+      transform: translate(-10px, -10px);
+    }
+
+    &:hover .section-team__photo-overlay {
+      transform: translate(-10px, -10px);
+    }
+
+    &:hover .section-team__photo-overlay::before {
+      opacity: 1;
+    }
+
+    &:hover .social-overlay {
+      opacity: 1;
+    }
+  }
+
+  &__photo-overlay {
+    transition: transform .2s linear;
+
+    &::before {
+      content: "";
+      display: block;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: opacity .2s linear;
+      background-image: linear-gradient(180deg, rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    }
+  }
+
+  /* DESCRIPTION OF TEAM */
+  &__name {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: $third-text-color;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: $first-font;
+  }
+
+  &__position {
+    display: block;
+    text-align: center;
+    color: $main-text-color;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: $second-font;
+  }
+}
+
+/* TEAM OVERLAY BUTTONS */
+.social-overlay {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s linear;
+
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(243, 129, 129, .5);
+  }
+
+  &__icon-link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: $main-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $sacond-color;
+    }
+
+    &:hover .social-overlay__icon-link-svg {
+      fill: $second-text-color;
+    }
+
+    &-svg {
+      width: 26px;
+      height: 26px;
+      fill: $sacond-color;
+      transition: fill .2s linear;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $third-text-color;
+  font-family: $first-font;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    content: "";
+    margin: 40px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color: $sacond-color;
+  }
+
+  &__desc {
+    display: block;
+    margin-bottom: 5px;
+    font-family: $third-font;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    text-transform: none;
+  }
+}
