@@ -2,18 +2,11 @@
 // debugger;
 
 const formatString = function (string) {
-  const rowСonstraint = 40;
-  if (string.length <= rowСonstraint) {
-    const unformattedString = string;
-    return unformattedString;
-  } else {
-    let formattedString = ``;
-    for (let i = 0; i < rowСonstraint - 1; i += 1) {
-      formattedString = formattedString + string[i];
-    }
-    const result = formattedString + `...`;
-    return result;
+  if (string.length >= 40) {
+    const slicedString = string.slice(0, 40);
+    return slicedString + '...';
   }
+  return string;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

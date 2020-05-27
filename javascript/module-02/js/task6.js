@@ -5,25 +5,18 @@ let input;
 const numbers = [];
 let total = 0;
 
-for (let i = 1; i > 0; i += 1) {
+do {
   input = prompt('Введите число в поле счетчика');
-  let toNumber = Number(input);
-  let numberTest = Number.isNaN(toNumber);
 
-  if (numberTest) {
+  if (Number.isNaN(Number(input))) {
     alert('Неверная запись числа, попробуйте еще раз');
-  } else {
-    if (toNumber > 0) {
-      numbers.push(toNumber);
-    } else {
-      for (const counter of numbers) {
-        total = total + counter;
-      }
-      break;
-    }
+  } else if (Number(input) > 0) {
+    numbers.push(Number(input));
   }
+} while (input !== null);
+
+for (const element of numbers) {
+  total = total + element;
 }
 
 console.log(`Общая сумма чисел равна ${total}`);
-
-// не знаю правильно ли так и можно ли было проще, но я решил так. буду рад отзыву
