@@ -19,6 +19,7 @@ input.addEventListener('input', getNumber);
 let startValues = 30;
 
 function createBoxes() {
+  removeBoxes();
   let element;
 
   for (let i = 1; i <= getValues; i += 1) {
@@ -47,5 +48,3 @@ function removeBoxes() {
   startValues = 30;
 }
 destroy.addEventListener('click', removeBoxes);
-
-// На это ушло очень много времени и думаю можно было реализовать лучше, но я смог только так
