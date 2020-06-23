@@ -46,9 +46,9 @@ function createMarkup(userRequest) {
         refs.notFound.textContent = 'No images for your request';
       }
 
-      requestHavePage = Math.ceil(res.data.total / 20);
+      requestHavePage = Math.ceil(res.data.total / 16);
 
-      if (res.data.total > 20) {
+      if (res.data.total > 16) {
         refs.loadMore.classList.remove('load-more-disabled');
       }
 

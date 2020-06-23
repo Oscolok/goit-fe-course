@@ -84,7 +84,7 @@ body {
 
 .gallery {
   display: grid;
-  width: 2000px;
+  width: 1600px;
   max-width: 98%;
 
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
